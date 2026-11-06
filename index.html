@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Coffee House</title>
-     <link rel="stylesheet" href="css/style.css">
+    <!-- links the css file to the html file -->
+     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
+    <!-- enables users to skip the navigation and go directly to the main content. -->
   <a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
-  <div class="wrapper">
-
+  <div class="container">
     <a href="index.html">
       <img
         src="images/my-coffee-shop-logo.svg"
         alt="My Coffee House"
         class="logo">
     </a>
-
+<!-- creates the main navigation for the website -->
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="#about">About us</a></li>
@@ -26,8 +27,24 @@
         <li><a href="#locations">Locations</a></li>
       </ul>
     </nav>
-
   </div>
 </header>  
+<main id="main" class="main-content">
+  <section class="hero">
+    <div class="container">
+
+      <h1>Experience coffee like never before</h1>
+      <p>
+        We craft more than beverages; we curate memories,
+        one flavorful moment at a time. Embrace the aroma
+        and let every visit be a chapter in your coffee story.
+      </p>
+        <!-- creates a link to navigate to the menu and styles it like a button. -->
+      <a href="#menu" class="button">Explore our menu</a>
+
+    </div>
+  </section>
+
+</main>
 </body>
 </html>
