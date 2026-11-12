@@ -57,3 +57,52 @@ p {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
+/* Hide the skip link above the screen until it receives keyboard focus. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+
+header {
+  background-color: #000000;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  width: 260px;
+  margin: 0 auto 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a:active {
+  color: #d69e3d;
+}
