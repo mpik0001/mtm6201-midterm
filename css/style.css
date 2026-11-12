@@ -12,19 +12,20 @@ body {
   line-height: 1.5;
 }
 
-/* Keep images inside their containers without stretching them. */
+/* Keeps images inside their containers without stretching them. */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
+/* Sets the font for headings and forces the text to be uppercase. */
 h1,
 h2,
 h3 {
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
+  text-transform: uppercase; 
   line-height: 1.1;
+  /* gives the headings some space below them */
   margin: 0 0 1rem;
 }
 
@@ -67,7 +68,7 @@ p {
   padding: 1rem;
   z-index: 10;
 }
-
+/* styles the skip link when it receives focus */
 .skip-link:focus {
   top: 1rem;
 }
@@ -105,4 +106,62 @@ nav a:hover,
 nav a:focus-visible,
 nav a:active {
   color: #d69e3d;
+}
+/* Darken the background photo so the white text is easier to read. */
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 0;
+}
+/* gives the hero heading some space below it */
+.hero h1 {
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Give navigation links the appearance of buttons. */
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+/* darken the button on hover */
+.button-dark {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.button-outline {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: #966f2c;
+  border-color: #966f2c;
+  color: #ffffff;
+}
+
+.button:active {
+  background-color: #d69e3d;
+  border-color: #d69e3d;
+  color: #000000;
 }
