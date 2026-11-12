@@ -141,7 +141,7 @@ nav a:active {
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-/* darken the button on hover */
+/* Creates a black button with white text. */
 .button-dark {
   background-color: #000000;
   color: #ffffff;
@@ -164,4 +164,155 @@ nav a:active {
   background-color: #d69e3d;
   border-color: #d69e3d;
   color: #000000;
+}
+
+/* Adds space above and below the welcome section. */
+.welcome {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Places the gallery images in two equal columns. */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Makes each photo fill its grid area without stretching. */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Makes the first photo span both columns. */
+.large-image {
+  grid-column: 1 / 3;
+}
+
+/* Make keyboard navigation easier to follow. */
+a:focus-visible {
+  outline: 3px solid #d69e3d;
+  outline-offset: 4px;
+}
+
+/* Centre the feature content and stack the three features on mobile. */
+.offers {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.features {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+
+.feature p {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* Share one darkened background photo between menu and locations. */
+.visit {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/coffee-shop.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.visit-content {
+  display: grid;
+  gap: 4rem;
+}
+
+.visit .eyebrow,
+.testimonials .eyebrow {
+  color: #d69e3d;
+}
+
+.visit h2 {
+  margin-bottom: 2rem;
+}
+
+/* Place the story text below its image on mobile. */
+.about {
+  display: grid;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about > img {
+  width: 100%;
+}
+
+/* Stack the customer testimonials on mobile. */
+.testimonials {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4rem 0;
+}
+
+.testimonial-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Put the photo and quote in the same grid cell. */
+.testimonial {
+  display: grid;
+}
+
+.testimonial > img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position the quote at the bottom and darken the photo behind it. */
+.testimonial-text {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  background-image:
+    linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+blockquote {
+  margin: 0;
+}
+
+.customer {
+  color: #d69e3d;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer p {
+  margin: 0;
 }
