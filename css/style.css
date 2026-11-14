@@ -59,6 +59,9 @@ p {
   margin-bottom: 0.5rem;
 }
 /* Hide the skip link above the screen until it receives keyboard focus. */
+/*I got helped by AI as I am still struggling a bit with the skip link. 
+Prompt: How do I make a skip link appear when selected with the keyboard,
+and add a visible focus outline to links?  */
 .skip-link {
   position: absolute;
   top: -100px;
@@ -108,6 +111,9 @@ nav a:active {
   color: #d69e3d;
 }
 /* Darken the background photo so the white text is easier to read. */
+/* AI assistance - prompt: How can I darken a background image using a CSS linear-gradient
+so white text is easier to read? Explain the rgba values using
+simple language so that i understand and apply it accordingly. */
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -295,7 +301,7 @@ a:focus-visible {
   background-image:
     linear-gradient(transparent, rgba(0, 0, 0, 0.8));
 }
-
+/* creates a blockquote style */
 blockquote {
   margin: 0;
 }
